@@ -37,7 +37,7 @@ episode_reward = 0.0
 for _ in range(100):
     action = np.int_(optimal_policy[obs])
     obs,reward,done,info = env.step(action)
-    #env.render()
+    env.render()
     episode_reward += reward
     if done:
         print('reward:', episode_reward)
