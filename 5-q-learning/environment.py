@@ -45,11 +45,11 @@ class Env(tk.Tk):
 
     def load_images(self):
         rectangle = PhotoImage(
-            Image.open(r"D:\까마귀\KAIST\강화학습\1-grid-world\image\rectangle.png").resize((65, 65)))
+            Image.open(r".\rectangle.png").resize((65, 65)))
         triangle = PhotoImage(
-            Image.open(r"D:\까마귀\KAIST\강화학습\1-grid-world\image\triangle.png").resize((65, 65)))
+            Image.open(r".\triangle.png").resize((65, 65)))
         circle = PhotoImage(
-            Image.open(r"D:\까마귀\KAIST\강화학습\1-grid-world\image\circle.png").resize((65, 65)))
+            Image.open(r".\circle.png").resize((65, 65)))
 
         return rectangle, triangle, circle
 
