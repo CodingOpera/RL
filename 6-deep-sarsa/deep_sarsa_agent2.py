@@ -121,10 +121,8 @@ if __name__ == "__main__":
                 pylab.plot(episodes, scores, 'b')
                 pylab.xlabel('episode')
                 pylab.ylabel('average score')
-                pylab.savefig(r'C:/Users/moonstar/Python/RL/1-grid-world/6-deep-sarsa/deep_sarsa_.png')
+                pylab.savefig(r'C:/Users/.../deep_sarsa_.png')
 
         # 100 에피소드마다 모델 저장
         if e % 100 == 0:
-            agent.model.save_weights(r'C:/Users/moonstar/Python/RL/1-grid-world/6-deep-sarsa/deep_sarsa.h5')
-
-print('Good!')
+            agent.model.save_weights(r'C:/Users/.../deep_sarsa.h5')
