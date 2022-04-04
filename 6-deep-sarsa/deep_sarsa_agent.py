@@ -29,7 +29,7 @@ class DeepSARSAgent:
 
         if self.load_model:
             self.epsilon = 0.05
-            self.model.load_weights(r'C:/Users/moonstar/Python/RL/1-grid-world/6-deep-sarsa/deep_sarsa_trained.h5')
+            self.model.load_weights(r'C:/Users/.../deep_sarsa_trained.h5')
 
     # 상태가 입력 큐함수가 출력인 인공신경망 생성
     def build_model(self):
@@ -109,10 +109,10 @@ if __name__ == "__main__":
                 scores.append(score)
                 episodes.append(e)
                 pylab.plot(episodes, scores, 'b')
-                pylab.savefig(r'C:/Users/moonstar/Python/RL/1-grid-world/6-deep-sarsa/deep_sarsa_.png')
+                pylab.savefig(r'C:/Users/.../deep_sarsa_.png')
                 print("episode:", e, "  score:", score, "global_step",
                       global_step, "  epsilon:", agent.epsilon)
 
         # 100 에피소드마다 모델 저장
         if e % 100 == 0:
-            agent.model.save_weights(r'C:/Users/moonstar/Python/RL/1-grid-world/6-deep-sarsa/deep_sarsa.h5')
+            agent.model.save_weights(r'C:/Users/.../deep_sarsa.h5')
